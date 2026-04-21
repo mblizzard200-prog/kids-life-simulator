@@ -1,27 +1,56 @@
-# Kids Life Simulator
+# Kids Life Simulator (Unity 3D)
 
-## Overview
-The Kids Life Simulator is an interactive Unity 3D game designed to emulate the daily routines of a child's life. The game allows players to engage with various activities and experiences that a child encounters in their daily life.
+A complete, ready-to-run Unity 3D mini game where the player completes daily tasks, earns brownie points, and keeps mom's anger low.
 
-## Features
-- **Daily Routine Activities**: Players can navigate the daily schedule of a child, including going to school, playing with friends, and managing homework.
-- **Interactive Learning**: The game incorporates educational elements to help players learn essential skills.
-- **Various Environments**: Players can explore different settings within the game, such as home, school, and parks.
-- **Customization Options**: Players can personalize their characters and environments to enhance their gaming experience.
+## Project Structure
 
-## Getting Started
-To get started with the Kids Life Simulator, clone the repository and open the project in Unity. Make sure you have the necessary Unity version installed to run the project smoothly.
+```
+Assets/
+├── Materials/
+│   ├── Friend.mat
+│   ├── Ground.mat
+│   ├── PlayArea.mat
+│   ├── Sink.mat
+│   ├── Stove.mat
+│   └── Toy.mat
+├── Scenes/
+│   └── Home.unity
+└── Scripts/
+    ├── GameManager.cs
+    ├── InteractiveObject.cs
+    ├── PlayerController.cs
+    ├── TaskManager.cs
+    └── UIManager.cs
+```
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mblizzard200-prog/kids-life-simulator.git
-   ```
-2. Open the project in Unity.
-3. Follow the on-screen instructions to set up the game.
+## Open and Play
 
-## Contributing
-If you wish to contribute to the Kids Life Simulator project, feel free to submit a pull request with your suggestions and improvements.
+1. Open **Unity Hub**.
+2. Click **Add project from disk** and choose this repository folder.
+3. Open the project with **Unity 2022.3 LTS** (or newer compatible LTS).
+4. In the Project window, open `Assets/Scenes/Home.unity`.
+5. Click **Play**.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Controls
+
+- **W/A/S/D**: Move
+- **Mouse**: Look around
+- **Space**: Jump
+- **E**: Interact with nearby task objects
+- **Esc**: Unlock mouse cursor
+
+## Gameplay Loop
+
+- Complete tasks in order:
+  1. Morning Routine (Sink)
+  2. Room Cleaning (Toy)
+  3. Help Mom Cook (Stove)
+  4. Help Friend (Friend)
+  5. Play Responsibly (PlayArea)
+- Correct task completion gives brownie points.
+- Wrong interaction increases mom's anger.
+- Anger meter colors:
+  - Green: calm
+  - Yellow: warning
+  - Red: danger
+- At 100% anger, the game ends.
