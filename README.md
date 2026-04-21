@@ -1,27 +1,25 @@
-# Kids Life Simulator
+# Kids Life Simulator (Unity 2021+)
 
-## Overview
-The Kids Life Simulator is an interactive Unity 3D game designed to emulate the daily routines of a child's life. The game allows players to engage with various activities and experiences that a child encounters in their daily life.
+This repository now includes a ready-to-play Unity scene at:
 
-## Features
-- **Daily Routine Activities**: Players can navigate the daily schedule of a child, including going to school, playing with friends, and managing homework.
-- **Interactive Learning**: The game incorporates educational elements to help players learn essential skills.
-- **Various Environments**: Players can explore different settings within the game, such as home, school, and parks.
-- **Customization Options**: Players can personalize their characters and environments to enhance their gaming experience.
+- `/home/runner/work/kids-life-simulator/kids-life-simulator/Assets/Scenes/Home.unity`
 
-## Getting Started
-To get started with the Kids Life Simulator, clone the repository and open the project in Unity. Make sure you have the necessary Unity version installed to run the project smoothly.
+## Play Immediately
+1. Open the project in Unity 2021 or newer.
+2. Open `Assets/Scenes/Home.unity`.
+3. Press **Play**.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mblizzard200-prog/kids-life-simulator.git
-   ```
-2. Open the project in Unity.
-3. Follow the on-screen instructions to set up the game.
+## Controls
+- **WASD**: Move
+- **Mouse**: Look around (third-person camera)
+- **E**: Interact with task objects
 
-## Contributing
-If you wish to contribute to the Kids Life Simulator project, feel free to submit a pull request with your suggestions and improvements.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Included Gameplay
+- Brownie point system
+- Mom's anger meter
+- 5 daily-life tasks in sequence:
+  1. Sink (Morning Routine)
+  2. Toys (Room Cleaning)
+  3. Stove (Help Mom Cook)
+  4. Friend (Help Friend)
+  5. Play Area (Play Responsibly)
