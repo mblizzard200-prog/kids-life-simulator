@@ -77,11 +77,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public TextMeshProUGUI GetTaskDisplayText()
-    {
-        return taskDisplayText;
-    }
-
     private void EnsureUIExists()
     {
         if (browniePointsText != null && angerMeterBar != null && angerText != null && taskDisplayText != null)

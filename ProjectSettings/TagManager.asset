@@ -10,7 +10,6 @@ TagManager:
   - MainCamera
   - Player
   - GameController
-  - Untagged
   layers:
   - Default
   - TransparentFX

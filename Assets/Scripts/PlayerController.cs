@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float rotationSpeed = 10f;
 
     [Header("Camera")]
     [SerializeField] private Transform cameraHolder;

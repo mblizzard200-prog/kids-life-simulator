@@ -269,6 +269,26 @@ MonoBehaviour:
     description: Brush your teeth at the bathroom sink.
     brownieReward: 10
     completed: 0
+  - taskId: Toys
+    taskName: Room Cleaning
+    description: Put away the toys in the bedroom.
+    brownieReward: 15
+    completed: 0
+  - taskId: Stove
+    taskName: Help Mom Cook
+    description: Help mom cook in the kitchen.
+    brownieReward: 20
+    completed: 0
+  - taskId: Friend
+    taskName: Help Friend
+    description: Help your friend in the living room.
+    brownieReward: 15
+    completed: 0
+  - taskId: PlayArea
+    taskName: Play Responsibly
+    description: Play responsibly in the bedroom play area.
+    brownieReward: 10
+    completed: 0
 --- !u!1 &1500
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,26 +348,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-  - taskId: Toys
-    taskName: Room Cleaning
-    description: Put away the toys in the bedroom.
-    brownieReward: 15
-    completed: 0
-  - taskId: Stove
-    taskName: Help Mom Cook
-    description: Help mom cook in the kitchen.
-    brownieReward: 20
-    completed: 0
-  - taskId: Friend
-    taskName: Help Friend
-    description: Help your friend in the living room.
-    brownieReward: 15
-    completed: 0
-  - taskId: PlayArea
-    taskName: Play Responsibly
-    description: Play responsibly in the bedroom play area.
-    brownieReward: 10
-    completed: 0
 --- !u!1 &1300
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rotationSpeed: 10
   cameraHolder: {fileID: 3101}
   cameraDistance: 4
   cameraHeight: 2
@@ -753,6 +752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskId: Sink
+  isTaskCompletion: 1
+  brownieReward: 10
   prompt: Press E to do Morning Routine (+10)
 --- !u!1 &4100
 GameObject:
@@ -821,6 +822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskId: Toys
+  isTaskCompletion: 1
+  brownieReward: 15
   prompt: Press E to clean toys (+15)
 --- !u!1 &4200
 GameObject:
@@ -889,6 +892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskId: Stove
+  isTaskCompletion: 1
+  brownieReward: 20
   prompt: Press E to help cook (+20)
 --- !u!1 &4300
 GameObject:
@@ -957,6 +962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskId: Friend
+  isTaskCompletion: 1
+  brownieReward: 15
   prompt: Press E to help friend (+15)
 --- !u!1 &4400
 GameObject:
@@ -1025,6 +1032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskId: PlayArea
+  isTaskCompletion: 1
+  brownieReward: 10
   prompt: Press E to play responsibly (+10)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

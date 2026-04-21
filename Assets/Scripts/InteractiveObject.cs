@@ -4,7 +4,8 @@ using UnityEngine;
 public class InteractiveObject : MonoBehaviour
 {
     [SerializeField] private string taskId;
-    [SerializeField] private bool isTaskCompletion = true;
+    [SerializeField] private bool isTaskCompletion;
+    [SerializeField] private int brownieReward = 5;
     [SerializeField] private string prompt = "Press E to interact";
 
     private TaskManager taskManager;
@@ -36,8 +37,16 @@ public class InteractiveObject : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && taskManager != null && isTaskCompletion)
+        if (Input.GetKeyDown(KeyCode.E) && taskManager != null)
         {
+            if (!isTaskCompletion)
+            {
+                GameManager.Instance?.AddBrowniePoints(brownieReward);
+                uiManager?.SetInteractionPrompt($"+{brownieReward} brownie points!");
+                gameObject.SetActive(false);
+                return;
+            }
+
             bool completed = taskManager.TryCompleteTask(taskId);
             if (completed)
             {
